@@ -1,0 +1,3 @@
+query ExampleQuery($name: String!) {
+  hello(name: $name)
+}

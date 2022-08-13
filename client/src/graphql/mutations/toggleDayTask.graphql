@@ -1,0 +1,16 @@
+mutation ToggleDayTask($id: ID!) {
+  toggleDayTask(ID: $id) {
+    code
+    success
+    message
+    task {
+      id
+      description
+      title
+      icon
+      done
+      time
+      date
+    }
+  }
+}

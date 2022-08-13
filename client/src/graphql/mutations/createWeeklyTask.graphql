@@ -1,0 +1,15 @@
+mutation CreateWeeklyTask($createInput: CreateWeeklyTaskInput!) {
+  createWeeklyTask(createInput: $createInput) {
+    code
+    success
+    message
+    task {
+      id
+      title
+      description
+      icon
+      time
+      date
+    }
+  }
+}

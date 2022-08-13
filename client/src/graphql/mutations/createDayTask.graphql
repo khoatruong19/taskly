@@ -1,0 +1,16 @@
+mutation CreateDayTask($createInput: CreateDayTaskInput!) {
+  createDayTask(createInput: $createInput) {
+    code
+    success
+    message
+    task {
+      id
+      description
+      title
+      icon
+      done
+      time
+      date
+    }
+  }
+}

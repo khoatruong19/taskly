@@ -1,0 +1,7 @@
+mutation DeleteWeeklyTask($deleteWeeklyTaskId: ID!) {
+  deleteWeeklyTask(id: $deleteWeeklyTaskId) {
+    code
+    success
+    message
+  }
+}

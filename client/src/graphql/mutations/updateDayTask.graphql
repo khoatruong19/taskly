@@ -1,0 +1,16 @@
+mutation UpdateDayTask($updateInput: UpdateDayTaskInput!) {
+  updateDayTask(updateInput: $updateInput) {
+    code
+    success
+    message
+    task {
+      id
+      description
+      title
+      icon
+      done
+      time
+      date
+    }
+  }
+}

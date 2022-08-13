@@ -1,0 +1,11 @@
+mutation UpdateWeeklyTask($updateInput: UpdateWeeklyTaskInput!) {
+  updateWeeklyTask(updateInput: $updateInput) {
+    code
+    success
+    message
+    task {
+      title
+      description
+    }
+  }
+}

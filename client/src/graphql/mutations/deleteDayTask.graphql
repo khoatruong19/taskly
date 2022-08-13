@@ -1,0 +1,7 @@
+mutation DeleteDayTask($deleteDayTaskId: ID!) {
+  deleteDayTask(id: $deleteDayTaskId) {
+    code
+    success
+    message
+  }
+}

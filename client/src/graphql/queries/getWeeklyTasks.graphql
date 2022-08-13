@@ -1,0 +1,15 @@
+query GetAllWeeklyTasks {
+  getAllWeeklyTasks {
+    code
+    success
+    message
+    tasks {
+      id
+      title
+      description
+      icon
+      date
+      time
+    }
+  }
+}

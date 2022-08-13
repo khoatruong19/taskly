@@ -1,0 +1,16 @@
+query GetDayTasks($date: String!) {
+  getDayTasksByDate(date: $date) {
+    code
+    success
+    message
+    tasks {
+      id
+      description
+      title
+      icon
+      done
+      time
+      date
+    }
+  }
+}

@@ -1,0 +1,6 @@
+mutation LogoutUser($userId: ID!) {
+  logout(userId: $userId) {
+    code
+    success
+  }
+}
